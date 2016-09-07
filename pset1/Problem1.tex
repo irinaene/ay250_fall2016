@@ -1,0 +1,67 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\newcommand{\tab}{\hspace*{1.5em}}
+\usepackage[hmargin=1in, vmargin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+%\usepackage{minted}
+\usepackage{verbatim}
+\usepackage{listings}
+\usepackage{wasysym}
+
+\begin{document}
+
+\title{AY 250: Problem Set 1}
+\date{September 12, 2016}
+\author{Irina Ene}
+
+\maketitle
+
+\section*{Problem 1}
+
+\emph{Data}: 1 yellow and 1 green M\&M. \\
+\emph{Want}: The probability that the yellow M\&M comes from the 1994 bag. \\
+
+It is clear that the yellow M\&M came from either the 1994 or the 1996 bag, so let's label our two hypotheses as follow: \\
+
+\noindent $H_1$: the yellow M\&M came from the 1994 bag.\\
+$H_2$: the yellow M\&M came from the 1996 bag.\\
+
+Now we can write the Bayes' table for this problem. \\
+
+\begin{table}[h]
+\begin{tabular}{c|c|c|c|c}
+Hypothesis & P(H) & P(D$\vert$H) & P(D$\vert$H) $\times$ P(H) & P(H$\vert$D) \\
+\hline
+$H_1$ & 0.5 & $0.2 \times 0.2 = 0.04$ & 0.02 & $0.02/0.027 = 0.74$\\
+\hline
+$H_2$ & 0.5 & $0.14 \times 0.1 = 0.014$ & 0.007 & $0.007/0.027 = 0.26$
+\end{tabular}
+\end{table}
+
+Explanations:
+\begin{itemize}
+\item it is equally likely that the yellow M\&M came from either the 1994 or the 1996 bag, so P(H) is 0.5 for both $H_1$ and and $H_2$.
+\item P(D$\vert H_1$) is the probability that the yellow M\&M came from the 1994 bag and, consequently, that the green M\&M from the 1996 bag, hence $0.2 \times 0.2 = 0.04$.
+\item P(D$\vert H_2$) is the probability we the yellow M\&M came from the 1996 bag and, consequently, that the green M\&M came from the 1994 bag, hence $0.14 \times 0.1 = 0.014$.
+\end{itemize}
+
+So, the relative probability that the yellow M\&M came from the 1994 bag is $\dots$, while the normalized probability is 74\%.
+
+\subsection*{}
+
+%\begin{figure}[H]
+%\centering
+%\includegraphics[scale=0.7]{}
+%\caption{\small }
+%\end{figure}
+
+% \section*{Appendix}
+
+% \tab This section contains the code for all the modules/scripts used in this assignment.
+
+%\footnotesize \inputminted{python}{}
+
+\end{document}
