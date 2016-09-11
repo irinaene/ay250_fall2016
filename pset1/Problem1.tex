@@ -24,7 +24,7 @@
 \emph{Data}: 1 yellow and 1 green M\&M. \\
 \emph{Want}: The probability that the yellow M\&M comes from the 1994 bag. \\
 
-It is clear that the yellow M\&M came from either the 1994 or the 1996 bag, so let's label our two hypotheses as follow: \\
+It is clear (based on the description of the problem) that the yellow M\&M came from either the 1994 or the 1996 bag, so let's label our two hypotheses as follow: \\
 
 \noindent $H_1$: the yellow M\&M came from the 1994 bag.\\
 $H_2$: the yellow M\&M came from the 1996 bag.\\
@@ -32,6 +32,7 @@ $H_2$: the yellow M\&M came from the 1996 bag.\\
 Now we can write the Bayes' table for this problem. \\
 
 \begin{table}[h]
+\centering
 \begin{tabular}{c|c|c|c|c}
 Hypothesis & P(H) & P(D$\vert$H) & P(D$\vert$H) $\times$ P(H) & P(H$\vert$D) \\
 \hline
@@ -41,14 +42,14 @@ $H_2$ & 0.5 & $0.14 \times 0.1 = 0.014$ & 0.007 & $0.007/0.027 = 0.26$
 \end{tabular}
 \end{table}
 
-Explanations:
 \begin{itemize}
 \item it is equally likely that the yellow M\&M came from either the 1994 or the 1996 bag, so P(H) is 0.5 for both $H_1$ and and $H_2$.
-\item P(D$\vert H_1$) is the probability that the yellow M\&M came from the 1994 bag and, consequently, that the green M\&M from the 1996 bag, hence $0.2 \times 0.2 = 0.04$.
-\item P(D$\vert H_2$) is the probability we the yellow M\&M came from the 1996 bag and, consequently, that the green M\&M came from the 1994 bag, hence $0.14 \times 0.1 = 0.014$.
+\item P(D$\vert H_1$) is the probability that the yellow M\&M came from the 1994 bag (0.02) and, consequently, that the green M\&M from the 1996 bag (0.02), hence $0.2 \times 0.2 = 0.04$.
+\item P(D$\vert H_2$) is the probability we the yellow M\&M came from the 1996 bag (0.14) and, consequently, that the green M\&M came from the 1994 bag (0.1), hence $0.14 \times 0.1 = 0.014$.
+\item the evidence, P(D), is the sum of the two values in the P(D$\vert$H) $\times$ P(H) column, 0.02+0.007=0.027.
 \end{itemize}
 
-So, the relative probability that the yellow M\&M came from the 1994 bag is $\dots$, while the normalized probability is 74\%.
+So, from the probability table, we can read that the relative probability that the yellow M\&M came from the 1994 bag is $\underline{0.02}$, while the normalized probability is $\underline{0.74=74\%}$.
 
 \subsection*{}
 
